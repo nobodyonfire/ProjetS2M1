@@ -1,0 +1,30 @@
+{
+  "name": "projets2m1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client:build": "cd client && npm run build",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\""
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nobodyonfire/ProjetS2M1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nobodyonfire/ProjetS2M1/issues"
+  },
+  "homepage": "https://github.com/nobodyonfire/ProjetS2M1#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
